@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.scss';
-import logo from '../../images/logo.png'
+import logo from '../../images/Dhanushan__logo.png'
 import { HiMenuAlt4 } from 'react-icons/hi'
 import { HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion'
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={logo} alt="logo" href="#" />
+        {/* <img src={logo} alt="logo" href="#" className='name__logo' /> */}
       </div>
       <ul className="app__navbar-links">
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (

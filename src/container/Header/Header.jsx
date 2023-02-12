@@ -1,10 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import profile from '../../images/profile.png'
-import circle from '../../images/circle.svg'
+// import circle from '../../images/circle.svg'
 import react from '../../images/react.png'
 import javascript from '../../images/javascript.png'
 import css from '../../images/css.png'
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 import './Header.scss'
 
@@ -13,50 +14,62 @@ const scaleVariants = {
     scale: [0, 1],
     opacity: [0, 1],
     transition: {
-      duration: 1,
-      ease: 'easeInOut',
+    duration: 1,
+    ease: 'easeInOut',
     },
   },
 };
 
+
 function Header() {
+  const [text, count] = useTypewriter({
+    words: [
+      "Developer",
+      "Creator",
+      "Adventurer",
+      "Cartoon Fan"
+    ],
+    loop: true,
+    delaySpeed : 1000,
+  });
+
+  const { isType, isDelete, isDelay, isDone } = count;
   return (
-    <div className='app__header app__flex'>
+    <div
+      id='home'
+      className='app__header app__flex'>
+      
       <motion.div
-        whileInView={{ x: [100, 0], opacity: [0, 1] }}
+        whileInView={{ y: [20, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
-        className="app__header-info"
-      >
+        className="app__header-info">
+        
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
             <span></span>
-            <div style={{ marginLeft: 20 }}>
-              <p className='p-text'>Hi, I am</p>
-              <h1 className='head-text'>Dhanu</h1>
+            <div className='name' style={{ marginLeft: 10 }}>
+              <p className='p-text-name' style={{ fontSize: 20 , marginTop: 10}}>Hi, I am</p>
+              <h1 className='head-text' style={{marginTop: 0}}>Dhanu</h1>
             </div>
           </div>
-          <div className='tag-cmp app__text'>
-            <p className='p-text'>Fullstack developer</p>
+          <div className='tag-cmp app__text typed-text'>
+              <p className='p-text'><strong>I'm a {text}</strong></p>
           </div>
         </div>
+        
+
 
       </motion.div>
 
       <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5 , delayChildren: 0.5}}
-        className="app__header-img"
+         whileInView={{ y: [15, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+          className="app__header-img"
         >
-        <img src={profile} alt="profile picture"/>
+        <img src={profile} alt="profile picture" className='profile__picture'/>
         
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          src={circle}
-          alt="profile_circle"
-          className='overlay_circle'
-        >          
-        </motion.img>
+    
+        </motion.div>
 
         <motion.div
           variants={scaleVariants}
@@ -73,7 +86,6 @@ function Header() {
           }
         </motion.div>
         
-      </motion.div>
     </div>
   )
 }
