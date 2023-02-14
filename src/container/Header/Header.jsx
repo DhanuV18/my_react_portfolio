@@ -24,10 +24,10 @@ const scaleVariants = {
 function Header() {
   const [text, count] = useTypewriter({
     words: [
-      "Developer",
-      "Creator",
-      "Adventurer",
-      "Cartoon Fan"
+      "a Developer",
+      "a Creator",
+      "an Adventurer",
+      "a Cartoon Fan"
     ],
     loop: true,
     delaySpeed : 1000,
@@ -53,7 +53,7 @@ function Header() {
             </div>
           </div>
           <div className='tag-cmp app__text typed-text'>
-              <p className='p-text'><strong>I'm a {text}</strong></p>
+              <p className='p-text'><strong>I'm {text}</strong></p>
           </div>
         </div>
         

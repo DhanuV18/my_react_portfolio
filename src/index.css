@@ -4,7 +4,7 @@
   --font-base: "DM Sans", sans-serif;
 
   --primary-color: #edf2f8;
-  --secondary-color: #051297;
+  --secondary-color: #08129e;
   --light-secondary-color: rgba(213, 214, 233, 0.5);
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
@@ -12,6 +12,7 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
   --typed-text-color: rgb(33, 2, 70);
+  --heading-color: rgb(3, 3, 78);
 }
 
 * {
@@ -21,3 +22,44 @@
   scroll-behavior: smooth;
 }
 
+
+.btn{
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border: 0;  
+}
+
+h1{
+  font-size: 2.5rem;
+
+}
+
+@media screen and (min-width: 768px) {
+  h1{
+    font-size: 2.8rem
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.2rem
+  }
+}
+
+p{
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  
+}
+
+@media screen and (min-width: 768px) {
+  p {
+      font-size: 1.2rem;
+    }
+}

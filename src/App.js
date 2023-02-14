@@ -10,15 +10,17 @@ import About from './container/About/About'
 import './container/About/About.scss';
 
 import './App.scss';
+import Skills from './container/Skills/Skills';
 
 
 
 function App() {
   return (
     <div className='app'>
-      <Navbar />
-      <Header />
+      {/* <Navbar /> */}
+      {/* <Header /> */}
       <About />
+      {/* <Skills/> */}
     
     </div>
 
