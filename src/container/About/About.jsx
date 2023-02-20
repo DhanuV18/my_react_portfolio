@@ -95,12 +95,12 @@ const About = () => {
   }, []); 
 
   return (
-    <div className='container about'>
+    <div className='about' id='about'>
+      <div className='container'>
      <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}          
     >
-            
         <h1 className='about__heading'>About</h1>      
 
       </motion.div>
@@ -108,8 +108,8 @@ const About = () => {
       {aboutMe.map((aboutMe, index) => (
               
       <motion.div
-        whileInView={{ y: [40, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        whileInView={{ y: [50, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.3 }} 
       >
           <div className='about__details'>
               <div>
@@ -117,8 +117,9 @@ const About = () => {
                 <p className='paragraph__one'>{aboutMe.paragraph1}</p>
                 <p className='paragraph__two'>{aboutMe.paragraph2}</p>
                 <div className='CV__details'>
-                    <h3 src="#contact" className='contact__link' >Get in touch!</h3>
-                    <button className='btn btn__download'>Download CV</button>
+                    <h3 src="#contact" className='contact__link' >Get in touch! <span className='heart'>❤️</span></h3>
+                <button type="button" className='btn btn__download' Download >Download CV</button>
+                
                 </div>
               </div>
           </div>
@@ -127,7 +128,7 @@ const About = () => {
       ))}  
          
     </div>
-    
+    </div>      
   )
 }
 

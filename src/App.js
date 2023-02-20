@@ -17,10 +17,10 @@ import Skills from './container/Skills/Skills';
 function App() {
   return (
     <div className='app'>
-      {/* <Navbar /> */}
-      {/* <Header /> */}
+      <Navbar />
+      <Header />
       <About />
-      {/* <Skills/> */}
+      <Skills/>
     
     </div>
 

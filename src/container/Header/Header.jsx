@@ -5,7 +5,7 @@ import profile from '../../images/profile.png'
 import react from '../../images/react.png'
 import javascript from '../../images/javascript.png'
 import css from '../../images/css.png'
-import { Cursor, useTypewriter } from 'react-simple-typewriter'
+import { useTypewriter } from 'react-simple-typewriter'
 
 import './Header.scss'
 
@@ -40,7 +40,7 @@ function Header() {
       className='app__header app__flex'>
       
       <motion.div
-        whileInView={{ y: [20, 0], opacity: [0, 1] }}
+        whileInView={{ y: [10, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         className="app__header-info">
         
@@ -56,20 +56,43 @@ function Header() {
               <p className='p-text'><strong>I'm {text}</strong></p>
           </div>
         </div>
-        
-
-
+ 
       </motion.div>
-
+ 
       <motion.div
-         whileInView={{ y: [15, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        whileInView={{ y: [0, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div> 
+      
+      </motion.div>        
+
+       <motion.div
+        //  whileInView={{ y: [15, 0], opacity: [0, 1] }}
+        // transition={{ duration: 0.5 }}
+          variants={scaleVariants}
+          whileInView={scaleVariants.whileInView}
           className="app__header-img"
-        >
-        <img src={profile} alt="profile picture" className='profile__picture'/>
+      >
+         <img src={profile} alt="profile picture" className='profile__picture'/>         
+          
         
-    
-        </motion.div>
+      </motion.div>
+        
+              <motion.div
+        whileInView={{ y: [0, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div> 
+      
+      </motion.div>  
+      
 
         <motion.div
           variants={scaleVariants}
@@ -84,9 +107,12 @@ function Header() {
               </div>
             ))
           }
+ 
+
         </motion.div>
-        
+
     </div>
+
   )
 }
 
