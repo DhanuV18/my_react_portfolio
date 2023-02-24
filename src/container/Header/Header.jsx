@@ -77,8 +77,11 @@ function Header() {
           whileInView={scaleVariants.whileInView}
           className="app__header-img"
       >
-         <img src={profile} alt="profile picture" className='profile__picture'/>         
-          
+        <picture>
+            <source type="../../images/profile.webp" srcset="../../images/profile.webp 1x, ../../images/profile@2x.webp 2x" />
+            <source type="../../images/profile.png" srcset="../../images/profile.png 1x, ../../images/profile@2x.png 2x" />
+            <img src={profile} alt="profile picture" className='profile__picture'/>         
+        </picture>
         
       </motion.div>
         

@@ -64,13 +64,14 @@
 // }
 
 .about{
-  // background-image: url(../../images/bgIMG15.jpg);
+  background-image: url(../../images/IMGYellow.png);
   
-  background: linear-gradient(white, rgba(22, 154, 241, 0.5) , white);
+  // background: linear-gradient(white, rgba(22, 154, 241, 0.5) , white);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
+  padding: 2rem 0;
   
 }
 
@@ -156,3 +157,10 @@
     }
   }
 
+.getInTouch{
+  text-decoration: none;
+
+  &:visited{
+    color: var(--secondary-color);
+  }
+}

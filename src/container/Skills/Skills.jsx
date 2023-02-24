@@ -49,7 +49,7 @@ import about04 from '../../images/about04.png'
 };
 
   return (
-    <div className='skills__container'>
+    <div className='skills__container' id="skills">
       <motion.div
         variants={scaleVariants}
           whileInView={scaleVariants.whileInView}   

@@ -12,6 +12,11 @@ import './container/About/About.scss';
 import './App.scss';
 import Skills from './container/Skills/Skills';
 
+import Work from './container/Work/Work';
+import './container/Work/Work.scss'
+
+import Footer from './container/Footer/Footer';
+import './container/Footer/Footer.scss'
 
 
 function App() {
@@ -20,8 +25,10 @@ function App() {
       <Navbar />
       <Header />
       <About />
-      <Skills/>
-    
+      <Skills />
+      <Work />
+      <Footer />
+      
     </div>
 
   );
