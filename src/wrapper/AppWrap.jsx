@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/Dhanushan__logo.png'
+import logo from '../images/favicon.png'
 
 
 const AppWrap = (Component, idName, classNames) => function HOC() {
@@ -10,7 +10,7 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
         <Component />
 
         <div className="copyright">
-          <img src={logo} alt="" className='footer__logo'/>
+          <img src={logo} alt="" className='footer__logo' />
           <p className="copyright__paragraph">Copyright 2023. Designed & coded by Dhanushan</p>          
         </div>
       </div>

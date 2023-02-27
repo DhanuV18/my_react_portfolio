@@ -7,10 +7,10 @@ import { urlFor } from '../../client';
 import { client } from '../../client';
 
 
-import about01 from '../../images/about01.png'
-import about02 from '../../images/about02.png'
-import about03 from '../../images/about03.png'
-import about04 from '../../images/about04.png'
+// import about01 from '../../images/about01.png'
+// import about02 from '../../images/about02.png'
+// import about03 from '../../images/about03.png'
+// import about04 from '../../images/about04.png'
 
 // const abouts = [
 //   { title: 'Frontend Development', imgUrl: `${about01}` },
@@ -26,7 +26,7 @@ import about04 from '../../images/about04.png'
 
   useEffect(() => {
     const query = '*[_type == "abouts"]';
-       const skillsQuery = '*[_type == "skills"]';
+    const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
       setAbouts(data);
@@ -54,14 +54,14 @@ import about04 from '../../images/about04.png'
         variants={scaleVariants}
           whileInView={scaleVariants.whileInView}   
           className="app__header-img">
-      <h1 className="skills__head-text">Skills</h1>
+          <h1 className="skills__head-text">Skills</h1>
 
       </motion.div>
 
       <motion.div
                 whileInView={{ y: [-20, 20], opacity: [0, 1] }}
                 transition={{ duration: 0.3 }} >
-      <h1 className='skills__heading'>My Toolbox & Things I can Do</h1>
+                <h1 className='skills__heading'>My Toolbox & Things I can Do</h1>
       </motion.div>
       
            <div className="container-small app__skills-container">
@@ -96,6 +96,7 @@ import about04 from '../../images/about04.png'
                 className="app__profile-item"
                 key={about.title + index}
               >
+                
               <img src={urlFor(about.imgUrl)} alt={about.title} />
                <h2 className="bold-text" style={{ marginTop: 20, marginLeft: 0,  fontSize: '1rem' }}>{about.title}</h2>
              

@@ -159,12 +159,14 @@
     padding: 0 2rem;
 }
 
-// .footer {
-//     background-image: url(../../images/bgIMG3.jpg);
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
+.footer {
+    background-image: url(../../images/bgIMGcloud.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
 
 .form {
     
@@ -172,6 +174,7 @@
     border: 1px solid #ccc;
     margin-top: 2rem;
     border-radius: 5px;
+    background-color: rgb(235, 233, 233);
     box-shadow: 0 0 100px 1px var(--secondary-blue-light-color);
 }
 
@@ -243,9 +246,10 @@ textarea {
 
 .contact__paragraph{
     margin: 1rem 0;
-    color:rgb(121, 118, 118);
+    color:rgb(19, 18, 18);
     font-size: 1rem;
     line-height: 1.5;
+    text-align: center;
 
     @media screen and (min-width: 1024px){
         font-size: 1.1rem;        
@@ -277,13 +281,15 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -1rem;
+    
     
 }
 
 .icon{
     height: 45px;
     width: 45px;
-    margin: 1.8rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     transition: transform 0.2s ease-in ;
 
     &:hover{
@@ -303,4 +309,40 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.copyright {
+    padding: 0 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.2rem;
+    }
+
+    .copyright__paragraph {
+
+        font-size: 1.3rem;
+        color: rgb(15, 15, 15);
+        margin: 1rem 0 0 0;
+        padding: 0 1rem 0 1rem;
+
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.footer__logo {
+    width: 100px;
+
+    @media screen and (min-width: 768px) {
+
+        padding: 0.5rem 0 0 0;
+    }
 }

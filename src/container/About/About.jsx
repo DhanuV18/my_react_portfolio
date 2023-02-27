@@ -7,6 +7,8 @@ import { client } from "../../client";
 
 import { useState, useEffect } from "react";
 
+import resume from '../../resume/My_resume.pdf'
+
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -31,7 +33,7 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <div className="container">
+      <div className="container ">
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
@@ -45,7 +47,7 @@ const About = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="about__details">
-              <div>
+              <div >
                 <h2 className="name__heading">Who is Dhanushan?</h2>
                 <p className="paragraph__one">{aboutMe.paragraph1}</p>
                 <p className="paragraph__two">{aboutMe.paragraph2}</p>
@@ -55,9 +57,11 @@ const About = () => {
                       Get in touch! <span className="heart">❤️</span>
                     </a>
                   </h3>
-                  <button type="button" className="btn btn__download" Download>
-                    Download CV
-                  </button>
+                  <a href={ resume }>
+                    <button type="button" className="btn btn__download" download>
+                      Download CV
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

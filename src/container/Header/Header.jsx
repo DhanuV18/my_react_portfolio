@@ -63,9 +63,9 @@ function Header() {
         whileInView={{ y: [0, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}>
         <div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
         </div> 
       
       </motion.div>        
@@ -78,8 +78,8 @@ function Header() {
           className="app__header-img"
       >
         <picture>
-            <source type="../../images/profile.webp" srcset="../../images/profile.webp 1x, ../../images/profile@2x.webp 2x" />
-            <source type="../../images/profile.png" srcset="../../images/profile.png 1x, ../../images/profile@2x.png 2x" />
+            <source type="../../images/profile.webp" srcSet="../../images/profile.webp 1x, ../../images/profile@2x.webp 2x" />
+            <source type="../../images/profile.png" srcSet="../../images/profile.png 1x, ../../images/profile@2x.png 2x" />
             <img src={profile} alt="profile picture" className='profile__picture'/>         
         </picture>
         
@@ -89,9 +89,9 @@ function Header() {
         whileInView={{ y: [0, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}>
         <div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
         </div> 
       
       </motion.div>  

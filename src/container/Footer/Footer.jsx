@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 import linkedin from '../../images/linkedin__logo.png'
 import github  from '../../images/github__logo.png'
+import logo from '../../images/favicon.png'
 
 
 
@@ -54,7 +55,8 @@ const Footer = () => {
   
 
   return (
-    <div className='footer'>
+    <div className='footer' id='contact'>      
+   
     <div className='contact__container contact'>
         <header>
         <motion.div
@@ -120,21 +122,33 @@ const Footer = () => {
             transition={{ duration: 0.3 }} 
             >
               <div className='social__icon'>
-                <a href="" target='_blank' ><img src={linkedin} alt="linkedin" className='icon icon--linkedin'/></a> 
-                <a href="" target='_blank' ><img src={github} alt="linkedin" className='icon icon--github'/></a>       
+                <a href="www.linkedin.com/in/visvanathan-dhanushan-048973253" target='_blank' ><img src={linkedin} alt="linkedin" className='icon icon--linkedin'/></a> 
+                <a href="https://github.com/DhanuV18" target='_blank' ><img src={github} alt="linkedin" className='icon icon--github'/></a>       
               </div>
       </motion.div>
           </motion.div>
           </div>  
-
+          {/* <AppWrap /> */}
           
       </div>
-       </div>
+         <div className="copyright">
+          <img src={logo} alt="" className='footer__logo'/>
+          <p className="copyright__paragraph">Copyright 2023. Designed & coded by Dhanushan</p>          
+        </div>
+      </div>
+      
   );
 };
 
-export default AppWrap(
-  MotionWrap(Footer, 'app__footer'),
-  'contact',
-  'app__whitebg',
-);
+export default Footer
+//   MotionWrap('app__footer'),
+//   'contact',
+//   'app__whitebg'
+// );
+
+
+// export default AppWrap(
+//   MotionWrap(Footer, 'app__footer'),
+//   'contact',
+//   'app__whitebg',
+// );
