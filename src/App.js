@@ -22,12 +22,12 @@ import './container/Footer/Footer.scss'
 function App() {
   return (
     <div className='app'>
-      {/* <Navbar />
+      <Navbar />
       <Header />
-      <About />  */}
+      <About /> 
       <Skills />
-      {/* <Work />
-      <Footer /> */}
+      <Work />
+      <Footer />
       
     </div>
 

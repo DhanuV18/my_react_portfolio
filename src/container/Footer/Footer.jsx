@@ -122,7 +122,7 @@ const Footer = () => {
             transition={{ duration: 0.3 }} 
             >
               <div className='social__icon'>
-                <a href="www.linkedin.com/in/visvanathan-dhanushan-048973253" target='_blank' ><img src={linkedin} alt="linkedin" className='icon icon--linkedin'/></a> 
+                <a href="https://www.linkedin.com/in/visvanathan-dhanushan-048973253" target='_blank' ><img src={linkedin} alt="linkedin" className='icon icon--linkedin'/></a> 
                 <a href="https://github.com/DhanuV18" target='_blank' ><img src={github} alt="linkedin" className='icon icon--github'/></a>       
               </div>
       </motion.div>

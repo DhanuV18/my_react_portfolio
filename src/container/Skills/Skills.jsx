@@ -38,14 +38,15 @@ import { client } from '../../client';
   }, []); 
 
   const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
     transition: {
-    duration: 1,
-    ease: 'easeInOut',
-    },
-  },
+      delayChildren: 0.3,
+      staggerChildren: 0.2
+    }
+  }
 };
 
   return (
