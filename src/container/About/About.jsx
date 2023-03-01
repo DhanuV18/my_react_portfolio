@@ -39,6 +39,7 @@ const About = () => {
           whileInView={scaleVariants.whileInView}
         >
           <h1 className="about__heading">About</h1>
+          <h2>Dhanu</h2>
         </motion.div>
 
         {/* {aboutMe.map((aboutMe, index) => ( */}
