@@ -20,8 +20,8 @@ const scaleVariants = {
   },
 };
 
-const About = () => {
-  const [aboutMe, setAboutMe] = useState([]);
+// const About = () => {
+//   const [aboutMe, setAboutMe] = useState([]);
 
   // useEffect(() => {
   //   const query = '*[_type == "aboutMe"]';
