@@ -41,7 +41,7 @@ const About = () => {
           <h1 className="about__heading">About</h1>
         </motion.div>
 
-        {aboutMe.map((aboutMe, index) => (
+        {/* {aboutMe.map((aboutMe, index) => ( */}
           <motion.div
             whileInView={{ y: [-150, 0], opacity: [0, 1] }}
             transition={{ duration: 0.3 }}
@@ -72,7 +72,7 @@ const About = () => {
               </div>
             </div>
           </motion.div>
-        ))}
+        {/* ))} */}
       </div>
     </div>
   );
