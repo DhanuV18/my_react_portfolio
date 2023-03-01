@@ -3,7 +3,7 @@ import "./About.scss";
 
 import { motion } from "framer-motion";
 
-import { client } from "../../client";
+// import { client } from "../../client";
 
 import { useState, useEffect } from "react";
 
@@ -23,13 +23,13 @@ const scaleVariants = {
 const About = () => {
   const [aboutMe, setAboutMe] = useState([]);
 
-  useEffect(() => {
-    const query = '*[_type == "aboutMe"]';
+  // useEffect(() => {
+  //   const query = '*[_type == "aboutMe"]';
 
-    client.fetch(query).then((data) => {
-      setAboutMe(data);
-    });
-  }, []);
+  //   client.fetch(query).then((data) => {
+  //     setAboutMe(data);
+  //   });
+  // }, []);
 
   return (
     <div className="about" id="about">
