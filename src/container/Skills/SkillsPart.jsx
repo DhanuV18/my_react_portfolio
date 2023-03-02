@@ -18,7 +18,7 @@ function SkillsPart() {
             transition={{ duration: 0.3 }} 
             whileHover={{ scale: 1.1 }}
             className="app__profile-item"
-            // key={about.title + index}
+            key="frontend"
         >                
             <img src={ frontend } alt="Frontend development" />
             <h2 className="bold-text" style={{ marginTop: 20, marginLeft: 0,  fontSize: '1rem' }}>Frontend development</h2>
@@ -31,7 +31,7 @@ function SkillsPart() {
             transition={{ duration: 0.3 }} 
             whileHover={{ scale: 1.1 }}
             className="app__profile-item"
-            // key={about.title + index}
+            key="backend"
         >                
             <img src={ backend } alt="Backend development" />
             <h2 className="bold-text" style={{ marginTop: 20, marginLeft: 0,  fontSize: '1rem' }}>Backend development</h2>
@@ -43,7 +43,7 @@ function SkillsPart() {
             transition={{ duration: 0.3 }} 
             whileHover={{ scale: 1.1 }}
             className="app__profile-item"
-            // key={about.title + index}
+            key="fullstack"
         >                
             <img src={ fullstack } alt="Fullstack development" />
             <h2 className="bold-text" style={{ marginTop: 20, marginLeft: 0,  fontSize: '1rem' }}>Fullstack development</h2>
@@ -55,7 +55,7 @@ function SkillsPart() {
             transition={{ duration: 0.3 }} 
             whileHover={{ scale: 1.1 }}
             className="app__profile-item"
-            // key={about.title + index}
+            key="mobile_app"
         >                
             <img src={ mobileApp } alt="MobileApp development" />
             <h2 className="bold-text" style={{ marginTop: 20, marginLeft: 0,  fontSize: '1rem' }}>Mobile app development</h2>
@@ -68,7 +68,7 @@ function SkillsPart() {
             transition={{ duration: 0.3 }} 
             whileHover={{ scale: 1.1 }}
             className="app__profile-item"
-            // key={about.title + index}
+            key="game_dev"
         >                
             <img src={ game } alt="Game development" />
             <h2 className="bold-text" style={{ marginTop: 20, marginLeft: 0,  fontSize: '1rem' }}>Game development</h2>
