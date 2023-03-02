@@ -252,6 +252,8 @@
 }
 
 .skill__badge{
+    background-color: white;
+
     &:hover{
       transform: scale(1.1);
     }
@@ -259,4 +261,9 @@
 
 .skills__container{
   background-image: url(../../images/bgIMG3.jpg);
+}
+
+.skill__part-container{
+  max-width: 800px;
+  margin: 0 auto;
 }
